@@ -36,5 +36,7 @@ if (sexo == 'H') {
                 Fator (idade + contribuição): ${tempoContribuicao} \n\
                 Você NÃO pode se aposentar! :(`);
         }
+    } else {
+        console.log('Sexo inválido, reveja os valores informados!')
     }
 }

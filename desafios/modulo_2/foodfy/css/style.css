@@ -13,8 +13,6 @@
     margin: 0 auto;
 }
 
-
-
 nav {
     margin: 30px 0;
     position: relative;
@@ -123,6 +121,36 @@ footer {
 
 footer p{
     padding: 23px;
+}
+
+
+/*===== ABOUT ====*/
+.description-about {
+    margin-top: 50px;
+}
+
+.description-about h1, h2{
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description-about h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.description-about h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.description-about p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 

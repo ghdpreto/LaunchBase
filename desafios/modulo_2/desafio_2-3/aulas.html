@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sobre</title>
+    <title>Cursos</title>
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +26,7 @@
     </div>
 
     <section class="cards">
-        <div class="card"> 
+        <div class="card" id="starter"> 
             <div class="card_img-container">
                 <img src="./images/starter.svg" alt="Starter">
             </div>
@@ -34,14 +36,14 @@
             </div>
 
             <div class="card_info">
-                <a href="https://rocketseat.com.br/starter" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                <p>5 Módulos</p>
                 <p class="card_price">
                     Free
                 </p>
             </div>
         </div>
 
-        <div class="card"> 
+        <div class="card" id="launchbase"> 
             <div class="card_img-container">
                 <img src="./images/launchbase.svg" alt="Launchbase">
             </div>
@@ -51,14 +53,14 @@
             </div>
 
             <div class="card_info">
-                <a href="https://rocketseat.com.br/launchbase" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                <p>6 Semanas</p>
                 <p class="card_price">
                     Pago
                 </p>
             </div>
         </div>
 
-        <div class="card"> 
+        <div class="card" id="gostack"> 
             <div class="card_img-container">
                 <img src="./images/gostack.svg" alt="Go Stack">
             </div>
@@ -68,14 +70,14 @@
             </div>
 
             <div class="card_info">
-                <a href="https://rocketseat.com.br/gostack" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                <p>6 Semanas</p>
                 <p class="card_price">
                     Pago
                 </p>
             </div>
         </div>
 
-        <div class="card"> 
+        <div class="card" id="vqrjFnq3-uo"> 
             <div class="card_img-container">
                 <img src="./images/criando-player-audio.jpg" alt="Formulário animado com JS e CSS">
             </div>
@@ -92,7 +94,7 @@
             </div>
         </div>
 
-        <div class="card"> 
+        <div class="card" id="HN1UjzRSdBk"> 
             <div class="card_img-container">
                 <img src="./images/desvendando-cssgrid.jpg" alt="Desvendando o CSS Grid na prática">
             </div>
@@ -109,7 +111,7 @@
             </div>
         </div>
 
-        <div class="card"> 
+        <div class="card" id="ghTrp1x_1As"> 
             <div class="card_img-container">
                 <img src="./images/api-restful.jpg" alt="O que é API? REST e RESTful?">
             </div>
@@ -127,6 +129,17 @@
         </div>
     </section>
 
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal"><i class="material-icons">close</i></a>
+            <a class="max-modal"><i class="material-icons">fullscreen</i></a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
     <footer class="links">
         <a href="https://www.facebook.com/rocketseat" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank" rel="noopener noreferrer">Instragam</a>
@@ -135,6 +148,8 @@
         <a href="https://discordapp.com/invite/gCRAFhc" target="_blank" rel="noopener noreferrer">Discord</a>
         <a href="mailto:oi@rocketseat.com.br">Email</a>
     </footer>
+
+    <script src="./js/scripts.js"></script>
 
 </body>
 

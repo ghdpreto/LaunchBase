@@ -55,34 +55,30 @@ server.get("/", function (req, res) {
             },
         ]
     }
-        
+
 
     return res.render("about", { data })
 })
 
 server.get("/portfolio", function (req, res) {
-    return res.render("portfolio", { items: videos})
+    return res.render("portfolio", { items: videos })
 })
 
 
 server.get("/video", function (req, res) {
-    
+
     const id = req.query.id
 
-    const video = videos.find(function(video){
-
-        if (video.id == id) {
-            return true
-        }
+    const video = videos.find(function (video) {
+        return video.id == id
     })
 
     if (!video) {
-        res.send("404")
+        return res.render("not-found")
     }
 
     return res.render("video", { item: video })
 })
-
 
 
 server.use(function (req, res) {

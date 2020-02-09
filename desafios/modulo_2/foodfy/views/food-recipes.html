@@ -1,139 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
+{% block content%}
+<section class="cards">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Foodfy</title>
-    <link rel="shortcut icon" href="./assets/chef.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <a href="./"><img src="./assets/logo.png" alt="Logo Foodfy" srcset=""></a>
-                <div class="options">
-                    <a href="./about.html">Sobre</a>
-                    <a href="./food-recipes.html">Receitas</a>
-                </div>
-            </nav>
-        </header>
-
-        <section class="cards">
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/burger.png" alt="Burger">
-                </div>
-
-                <div class="card-content">
-                    <p>Triplo bacon burger</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Jorge Relato</p>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/pizza.png" alt="Pizza 4 estações">
-                </div>
-
-                <div class="card-content">
-                    <p>Pizza 4 estações</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Fabiana Melo</p>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/espaguete.png" alt="Espaguete ao alho">
-                </div>
-
-                <div class="card-content">
-                    <p>Espaguete ao alho</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Jorge Relato</p>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/lasanha.png" alt="Lasanha mac n’ cheese">
-                </div>
-
-                <div class="card-content">
-                    <p>Lasanha mac n’ cheese</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Juliano Vieira</p>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/doce.png" alt="Docinhos pão-do-céu">
-                </div>
-
-                <div class="card-content">
-                    <p>Docinhos pão-do-céu</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Ricardo Golvea</p>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img">
-                    <img src="./assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-                </div>
-
-                <div class="card-content">
-                    <p>Asinhas de frango ao barbecue</p>
-                </div>
-
-                <div class="card-autor">
-                    <p>por Vania Steroski</p>
-                </div>
-            </article>
-        </section>
-    </div>
-
-    <div class="modal-overlay">
-        <div class="modal-card">
-            <article>
-                <div class="modal-card-img">
-                    <img src="./assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-                </div>
-
-                <div class="modal-card-content">
-                    <p>Asinhas de frango ao barbecue</p>
-                    <p class="modal-card-autor">por Vania Steroski</p>
-                </div>
-            </article>
-
-            <div class="modal-card-close">
-                <a>Fechar modal</a>
-            </div>
+    {% for item in items %}
+    <article class="card">
+        <div class="card-img">
+            <img src="{{item.image}}" alt="Burger">
         </div>
-    </div>
 
-    <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
+        <div class="card-content">
+            <p>{{item.title}}</p>
+        </div>
 
-    <script src="./js/scripts.js"></script>
-</body>
-
-</html>
+        <div class="card-autor">
+            <p>{{item.author}}</p>
+        </div>
+    </article>
+    {% endfor %}
+    
+</section>
+{% endblock %}

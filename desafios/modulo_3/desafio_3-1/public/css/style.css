@@ -23,6 +23,7 @@ header{
     padding: 30px;
     background: #131217;
     border-bottom: 1px solid #17171d;
+    margin-bottom: 20px;
 }
 
 .links{
@@ -44,14 +45,16 @@ header{
 
 #wrapper{
     text-align: center;
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 #wrapper img{
-    height: 225px;
+    width: 100%;
+    max-width: 325px;
+    min-width: 50px;
+    height: auto;
     border-radius: 150px 10px;
-    margin: 20px;
     border: 2px solid var(--color-white);
 }
 
@@ -61,7 +64,7 @@ header{
 
 #wrapper h1 {
     padding: 10px 0;
-    
+    margin-top: 20px;
 }
 
 #wrapper h1 a{
@@ -96,14 +99,21 @@ header{
     font-weight: bold;
 }
 
-footer{
+.social_networks {
     margin: 50px;
 }
 
-footer a{
+.social_networks a{
     border-bottom: 1px solid var(--color-purple);
 }
 
+footer{
+    margin: 35px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
 
 /* ==== CARDS ==== */
 

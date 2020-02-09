@@ -21,9 +21,43 @@ server.listen(5000, function () {
 
 //retorno da rota principal (/)
 server.get("/", function (req, res) {
-    return res.render("about")
+    const data = {
+        avatar_url: "/images/logo.png",
+        title: "As melhores tecnologias em programação, direto ao ponto e do jeito certo.",
+        description: "No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.",
+        techs: ["NodeJS", "ReactJS", "React Native"],
+        links: [
+            {
+                name: "Facebook",
+                url: "https://www.facebook.com/rocketseat"
+            },
+            {
+                name: "Instagram",
+                url: "https://www.instagram.com/rocketseat_oficial/"
+            },
+            {
+                name: "Twitter",
+                url: "https://twitter.com/rocketseat"
+            },
+            {
+                name: "Youtube",
+                url: "https://www.youtube.com/rocketseat"
+            },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/invite/gCRAFhc"
+            },
+            {
+                name: "Email",
+                url: "mailto:oi@rocketseat.com.br"
+            },
+        ]
+    }
+
+
+    return res.render("about", { data })
 })
 
 server.get("/portfolio", function (req, res) {
-    return res.render("portfolio", { items: videos })
+    return res.render("portfolio", { items: videos})
 })

@@ -91,7 +91,6 @@ nav {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px rgba(236, 240, 241,1.0);
-    cursor: pointer;
 }
 
 .card-img img{
@@ -115,6 +114,8 @@ nav {
 }
 
 footer {
+    display: grid;
+    align-items: center;
     width: 100%;
     height: 62px;
     margin-top: 52px;
@@ -123,10 +124,6 @@ footer {
     color:#999999;
     font-size: 14px;
     line-height: 16px;
-}
-
-footer p {
-    padding: 23px;
 }
 
 
@@ -159,65 +156,67 @@ footer p {
     margin-bottom: 30px;
 }
 
-/*==== modal ====*/
+/*==== RECITES-INFO ====*/
 
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    visibility: hidden;
+.info-card-img {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    background-image: url("../assets/burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-card {
-    box-sizing: border-box;
-    position: relative;
-    width: 660px;
-    height: 413px;
-    padding: 30px;
-    margin: 20vh auto;
-    background-color: #fff;
-    border-radius: 16px;
+.info-card-content, .info-card-autor{
     text-align: center;
 }
 
-.modal-card-img {
-    width: 600px;
-    height: 200px;
+.info-card-content {
+    margin-top: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
 }
 
-.modal-card-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
-
-.modal-card-content {
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 400;
-}
-
-.modal-card-autor {
+.info-card-autor {
     margin-top: 5px;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 24px;
     color: #777;
 }
 
-.modal-card-close {
-    margin-top: 60px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #999999;
-    font-weight: 400;
-    cursor: pointer;
+
+.ingredients-recites {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.title-ingredients{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+.title-ingredients h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.title-ingredients a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
+}
+
+.ingredients-recites ul, .ingredients-recites p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+.ingredients-recites ul {
+    margin-left: 15px;
 }

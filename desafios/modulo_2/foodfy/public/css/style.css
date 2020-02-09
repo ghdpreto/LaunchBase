@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); /* font-family: 'Roboto', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.options {
+    margin-left: 200px;
+    text-justify: auto;
+    text-align: start;
+}
+
+.options a {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 366px;
+    margin-top: 30px;
+    background-color: #FBDFDE;
+    border-radius: 30px;
+    position: relative;
+}
+
+.description-content{
+    width: 316px;
+    position: absolute;
+    top: 117px;
+    left: 60px;
+}
+
+.description-content h1{
+    font-size: 32px;
+    color: #111111;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+
+.description-content p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #111111;
+}
+
+.description-img {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+
+.top-acess {
+    margin: 50px 0 0 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.cards {
+    padding-top: 20px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(236, 240, 241,1.0);
+}
+
+.card-img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.card-autor {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777;
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+    margin-top: 52px;
+    background-color: #EEEEEE;
+    text-align: center;
+    color:#999999;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+/*===== ABOUT ====*/
+.description-about {
+    padding-top: 20px;
+}
+
+.description-about h1, h2{
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description-about h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.description-about h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.description-about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*==== RECITES-INFO ====*/
+
+.info-card-img {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    background-image: url("../assets/burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-card-content, .info-card-autor{
+    text-align: center;
+}
+
+.info-card-content {
+    margin-top: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.info-card-autor {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #777;
+}
+
+
+.ingredients-recites {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.title-ingredients{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+.title-ingredients h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.title-ingredients a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
+}
+
+.ingredients-recites ul, .ingredients-recites p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+.ingredients-recites ul {
+    margin-left: 15px;
+}

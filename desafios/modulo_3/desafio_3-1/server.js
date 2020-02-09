@@ -12,7 +12,9 @@ server.set("view engine", "njk")
 
 //local (pasta a onde está o arquivo)
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoescape: false,
+    noCache: true
 })
 
 server.listen(5000, function () {
@@ -53,11 +55,15 @@ server.get("/", function (req, res) {
             },
         ]
     }
-
+        
 
     return res.render("about", { data })
 })
 
 server.get("/portfolio", function (req, res) {
     return res.render("portfolio", { items: videos})
+})
+
+server.use(function (req, res) {
+    res.status(404).render("not-found")
 })

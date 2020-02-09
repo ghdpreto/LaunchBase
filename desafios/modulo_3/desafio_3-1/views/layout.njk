@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    {% block head %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {% endblock %}
-    
-    <title>Sobre</title>
+        {% block head %}{% endblock %}
 
-    <link rel="shortcut icon" href="/views/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+        <title>Sobre</title>
 
-<body>
-    <header>
-        <div class="links">
-            <a href="/" rel="noopener noreferrer">Sobre</a>
-            <a href="/portfolio" rel="noopener noreferrer">Aulas</a>
-        </div>
-    </header>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
 
-    {% block content %}
+    <body>
+        <header>
+            <div class="links">
+                <a href="/" rel="noopener noreferrer">Sobre</a>
+                <a href="/portfolio" rel="noopener noreferrer">Aulas</a>
+            </div>
+        </header>
 
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
 
-<footer>
-    <p>Elaborado por Gustavo Henrique.</p>
-</footer>
-</body>
+        <footer>
+            <p>Elaborado por Gustavo Henrique.</p>
+        </footer>
+    </body>
 
 </html>

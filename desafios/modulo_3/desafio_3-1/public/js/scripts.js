@@ -7,12 +7,11 @@ for (let card of cards) {
 
         const idConteudo = card.getAttribute('id')
 
-        modalOverlay.classList.add('active')
-
         if (idConteudo == 'starter' || idConteudo == 'launchbase' || idConteudo == 'gostack') {
+            modalOverlay.classList.add('active')
             modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${idConteudo}`
         } else{
-            modalOverlay.querySelector('iframe').src = `https://www.youtube.com.br/embed/${idConteudo}`
+            window.location.href = `/video?id=${idConteudo}`
         }
     })
 }

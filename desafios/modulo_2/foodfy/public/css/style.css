@@ -6,7 +6,7 @@ body, html{
 }
 
 * {
-
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -90,19 +90,20 @@ nav {
 
 .card {
     background-color: #EEEEEE;
-    padding: 10px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px rgba(236, 240, 241,1.0);
+    cursor: pointer;
 }
 
 .card-img img{
-    border-radius: 15px;
     width: 100%;
     height: 100%;
+    border-radius: 15px 15px 0px 0px; 
 }
 
 .card-content {
     margin-top: 20px;
+    margin-left: 10px;
     font-size: 18px;
     line-height: 21px;
     font-weight: normal;
@@ -110,6 +111,7 @@ nav {
 
 .card-autor {
     margin-top: 5px;
+    margin-left: 10px;
     font-size: 14px;
     line-height: 16px;
     color: #777;
@@ -164,7 +166,6 @@ footer {
     width: 100%;
     height: 280px;
     border-radius: 15px;
-    background-image: url("../assets/burger.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -191,6 +192,7 @@ footer {
 .ingredients-recites {
     margin-top: 50px;
     align-items: center;
+    margin-left: 10px
 }
 
 .title-ingredients{
@@ -220,5 +222,5 @@ footer {
 }
 
 .ingredients-recites ul {
-    margin-left: 15px;
+    margin-left: 20px;
 }
